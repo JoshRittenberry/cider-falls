@@ -1,0 +1,28 @@
+Table Guests {
+  id int
+  firstName varchar
+  lastName varchar
+  areaId int
+}
+
+Table Areas {
+  id int
+  name varchar
+}
+
+Table parkServices {
+  id int
+  name varchar
+}
+
+Table areaServices {
+  id int
+  areaId int
+  servicesId int
+}
+
+Ref: "Guests"."areaId" > "Areas"."id"
+
+Ref: "Areas"."id" < "areaServices"."areaId"
+
+Ref: "parkServices"."id" < "areaServices"."servicesId"

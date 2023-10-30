@@ -1,0 +1,150 @@
+.areas {
+    width: 65%;
+    background-color: #262825;
+    color: rgb(255, 248, 237);
+    /* Updated the padding to be .75% instead of 20px */
+    padding: .75%;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+}
+
+#area__header {
+    text-align: center;
+    margin: 2%;
+}
+
+.area__containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Updated the margin to be 1% instead of 15px */
+    margin: 1%;
+    background-color: #F1E5D0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.area__container {
+    width: 30%;
+    margin: 1%;
+    background-color: #F54933;
+    color: #262825;
+    text-align: left;
+    font-size: .95em;
+    border: 2px solid #262825;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Used for the list icons */
+.area__services__list {
+    padding-right: 20px;
+}
+
+.area__services li {
+    margin: 1%;
+    font-size: 1.15em;
+    /* Change made for the service icon are below */
+    list-style: none;
+    padding-left: 30px;
+    line-height: 1.5;
+}
+
+.map__icon {
+    text-align: center;
+    margin: 2%;
+}
+
+.icon {
+    width: 15%;
+}
+
+.area__image {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 16 / 9;
+}
+
+/* Trying out some new li icons for the services list :) */
+
+.areaServiceId_1 {
+    background-image: url('/images/rafting_canoeing.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_2 {
+    background-image: url('/images/rafting_canoeing.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_3 {
+    background-image: url('/images/fishing.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_4 {
+    background-image: url('/images/rock_climbing.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_5 {
+    background-image: url('/images/hiking.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_6 {
+    background-image: url('/images/picknicking.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_7 {
+    background-image: url('/images/lodging.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_8 {
+    background-image: url('/images/parking.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_9 {
+    background-image: url('/images/information_office-park.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_10 {
+    background-image: url('/images/zip_line.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_11 {
+    background-image: url('/images/food.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_12 {
+    background-image: url('/images/information_office-park.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.areaServiceId_13 {
+    background-image: url('/images/play_area.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}

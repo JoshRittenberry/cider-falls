@@ -1,0 +1,74 @@
+title Cider Falls
+
+participant main.js
+participant services.js
+participant areas.js
+participant guests.js
+participant database.js
+participant User Event
+
+main.js->services.js:(5)Asks for parkServices html
+services.js->database.js:getParkServices asks for services array of objects 
+services.js<--database.js:Returns services array through getParkServices
+loop
+note over services.js:Loop through services to array, add data to html string
+end
+main.js<--services.js:Return htmlString
+
+User Event->services.js:On click event, 
+loop
+box over services.js:Loop through area services, if park service \nmatches area service, push to areaId array
+end
+loop 
+box over services.js:Loop through getAreas objects array,
+loop
+box over services.js:Loop through areaId array, if areaId\nmatches area.id, push to areaList
+end
+end
+User Event<--services.js:Returns alert message of matched Service
+
+
+main.js->areas.js:Asks for areas html
+loop 
+box over areas.js:Loops through areas object array, 
+areas.js->services.js:Asks for areaServicesList function
+************
+loop 
+box over services.js:Loop through areaServices, if area.id matches \nareaService.areaId, save as foundAreaService
+loop 
+box over services.js:Loop through parkServices, if parkService.id\nmatches foundAreaService, save name of \n parkService to html string
+end
+end
+areas.js<--services.js:Returns html string
+end
+box	over areas.js:Uses object data to create html string
+main.js<--areas.js:Returns areas html
+
+areas.js->User Event:On click event,
+loop 
+box over areas.js:Loop through guests object array, if\nguest.areaId matches id of area, push to\nguestList array
+end
+areas.js<--User Event:Returns alert message of guests in area
+
+areas.js->User Event:On click event,
+loop 
+box over areas.js:Loops through directions object array,\nif direction areaId matches dataset areaId
+loop 
+box over areas.js:Loops through directions object, if\nitem Id matches directionObject Id, \npush text to instructions array
+end 
+end
+box over areas.js:Create html string 
+areas.js<--User Event:Return window alert of html string 
+
+
+main.js->guests.js:Asks for guests html string
+loop 
+box over guests.js:Loop through guests object array\ncreate html string based on data
+end
+main.js<--guests.js:Returns guests html string
+
+guests.js->User Event:On click event,
+loop 
+box over guests.js:Loop through areas object array,\nIf area id matches guest areaId,\nadd to html string
+end
+guests.js<--User Event:Returns window alert html string

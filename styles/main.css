@@ -1,0 +1,82 @@
+@import url("./areas.css");
+@import url("./guests.css");
+@import url("./services.css");
+@import url("./footer.css");
+
+body {
+  margin: 0 10px 10px 10px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F1E5D0;
+  font-family: 'Manrope', sans-serif;
+  color: #262825;
+}
+
+h1 {
+  font-size: .35em;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Bree Serif', serif;
+  text-decoration: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Bree Serif', serif;
+  text-decoration: center;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 200px;
+  background-color: #F1E5D0;
+}
+
+.logo {
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.areas__header, .guest_header {
+  text-shadow: 0 0 5px #000000;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+
+.modal-content {
+  background-color: #262825;
+  color: #F1E5D0;
+  white-space: pre-line
+}
+
+.btn-close, .btn-secondary {
+  background-color: #F54933;
+}

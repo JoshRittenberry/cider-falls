@@ -1,0 +1,26 @@
+.services {
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+
+.services, h2 {
+    margin-bottom: 20px;
+}
+
+.park__services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    border: 2px solid #262825;
+    border-radius: 5px;
+    background-color: #F54933;
+    font-weight: bold;
+}
+
+.park__services li {
+    margin: 1%;
+    font-size: 1.25em;
+}
